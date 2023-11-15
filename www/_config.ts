@@ -23,6 +23,7 @@ export default lume(
   .copy("netlify.redirects", "_redirects")
   .copy("netlify.headers", "_headers")
   .copy("js")
+  .copy("missing-js")
   .addEventListener("afterRender", "cp -r ../src _site/")
   .data("layout", "docs.vto", "/docs")
   .data("layout", "prose.vto", "/pages")
